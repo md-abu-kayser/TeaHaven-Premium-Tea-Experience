@@ -3,21 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <meta name="author" content="Md Abu Kayser - Full-Stack Engineer" />
     <meta
       name="description"
-      content="Tea Haven offers the ultimate premium tea experience with hand-picked selections from around the world. Discover luxury, flavor, and tradition in every cup."
+      content="Tea Haven - premium, hand-picked teas from around the world. Discover luxury, flavor and tradition in every cup."
     />
     <meta
       name="keywords"
       content="premium tea, organic tea, tea collection, tea events, tea blog"
     />
-    <meta name="author" content="xAI Upgraded Project" />
-    <link rel="canonical" href="https://tea-haven-world-class.github.io/" />
-    <title>Tea Haven: Ultimate Premium Tea Experience</title>
-    <!-- Favicon (add your own) -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <!-- CSS Style -->
+    <link
+      rel="canonical"
+      href="https://md-abu-kayser.github.io/TeaHaven-Premium-Tea-Experience/"
+    />
+
+    <title>Tea Haven | Ultimate Premium Tea Experience</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/tea-fav-icon.png" type="image/png" />
+
+    <!-- Local CSS Style Link -->
     <link rel="stylesheet" href="css/style.css" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,95 +33,131 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome -->
+
+    <!-- Font Awesome-->
     <script
+      defer
       src="https://kit.fontawesome.com/4ee108a205.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Tailwind CSS with DaisyUI -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.1.0/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Custom Tailwind Config -->
+
+    <!-- Tailwind Play CDN -->
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "tea-green": "#D8E9D2",
-              "tea-brown": "#8B4513",
-              "tea-gold": "#D4AF37",
-              "tea-cream": "#F5F5DC",
-              "tea-dark": "#3C2F2F",
-              "tea-light-green": "#E8F5E9",
-              "tea-deep-brown": "#5D4037",
-              "tea-soft-gold": "#FFE082",
-              "tea-neutral": "#FAFAFA",
-              "tea-accent": "#66BB6A",
-            },
-            fontFamily: {
-              manrope: ["Manrope", "sans-serif"],
-              playfair: ["Playfair Display", "serif"],
-            },
-            animation: {
-              float: "float 6s ease-in-out infinite",
-              fadeIn: "fadeIn 1s ease-in-out",
-              slideIn: "slideIn 1s ease-out",
-              "pulse-slow": "pulse 3s infinite",
-              spinSlow: "spin 20s linear infinite",
-              bounceSoft: "bounce 2s infinite",
-              rotateSubtle: "rotate 10s linear infinite",
-            },
-            keyframes: {
-              float: {
-                "0%, 100%": { transform: "translateY(0)" },
-                "50%": { transform: "translateY(-20px)" },
+      tailwind = {
+        config: {
+          theme: {
+            extend: {
+              colors: {
+                "tea-green": "#D8E9D2",
+                "tea-brown": "#8B4513",
+                "tea-gold": "#D4AF37",
+                "tea-cream": "#F5F5DC",
+                "tea-dark": "#3C2F2F",
+                "tea-light-green": "#E8F5E9",
+                "tea-deep-brown": "#5D4037",
+                "tea-soft-gold": "#FFE082",
+                "tea-neutral": "#FAFAFA",
+                "tea-accent": "#66BB6A",
               },
-              fadeIn: {
-                "0%": { opacity: "0", transform: "scale(0.95)" },
-                "100%": { opacity: "1", transform: "scale(1)" },
+              fontFamily: {
+                manrope: ["Manrope", "sans-serif"],
+                playfair: ["Playfair Display", "serif"],
               },
-              slideIn: {
-                "0%": { transform: "translateX(-100%)", opacity: "0" },
-                "100%": { transform: "translateX(0)", opacity: "1" },
+              animation: {
+                float: "float 6s ease-in-out infinite",
+                fadeIn: "fadeIn 1s ease-in-out",
+                slideIn: "slideIn 1s ease-out",
+                "pulse-slow": "pulse 3s infinite",
+                spinSlow: "spin 20s linear infinite",
+                bounceSoft: "bounce 2s infinite",
+                rotateSubtle: "rotate 10s linear infinite",
               },
-              spin: {
-                "0%": { transform: "rotate(0deg)" },
-                "100%": { transform: "rotate(360deg)" },
+              keyframes: {
+                float: {
+                  "0%,100%": { transform: "translateY(0)" },
+                  "50%": { transform: "translateY(-20px)" },
+                },
+                fadeIn: {
+                  "0%": { opacity: "0", transform: "scale(0.95)" },
+                  "100%": { opacity: "1", transform: "scale(1)" },
+                },
+                slideIn: {
+                  "0%": { transform: "translateX(-100%)", opacity: "0" },
+                  "100%": { transform: "translateX(0)", opacity: "1" },
+                },
+                spin: {
+                  "0%": { transform: "rotate(0deg)" },
+                  "100%": { transform: "rotate(360deg)" },
+                },
+                bounce: {
+                  "0%,100%": { transform: "translateY(0)" },
+                  "50%": { transform: "translateY(-10px)" },
+                },
+                rotate: {
+                  "0%": { transform: "rotate(0deg)" },
+                  "100%": { transform: "rotate(360deg)" },
+                },
               },
-              bounce: {
-                "0%, 100%": { transform: "translateY(0)" },
-                "50%": { transform: "translateY(-10px)" },
+              boxShadow: {
+                soft: "0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)",
+                deep: "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
+                glow: "0 0 20px rgba(212,175,55,0.3)",
               },
-              rotate: {
-                "0%": { transform: "rotate(0deg)" },
-                "100%": { transform: "rotate(360deg)" },
+              transitionProperty: {
+                height: "height",
+                spacing: "margin, padding",
               },
-            },
-            boxShadow: {
-              soft: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-              deep: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-              glow: "0 0 20px rgba(212, 175, 55, 0.3)",
-            },
-            transitionProperty: {
-              height: "height",
-              spacing: "margin, padding",
             },
           },
         },
-        daisyui: {
-          themes: ["light", "dark", "cupcake", "corporate", "halloween"],
-        },
       };
     </script>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI Component -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.1.0/dist/full.css"
+      rel="stylesheet"
+    />
+    <!-- Social Preview -->
+    <meta
+      property="og:title"
+      content="Tea Haven | Ultimate Premium Tea Experience"
+    />
+    <meta
+      property="og:description"
+      content="Hand-picked, premium teas from around the world — discover luxury, flavor and tradition in every cup."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tea-haven-world-class.github.io/"
+    />
+    <meta
+      property="og:image"
+      content="https://tea-haven-world-class.github.io/images/preview.png"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Tea Haven - Ultimate Premium Tea Experience"
+    />
+    <meta
+      name="twitter:description"
+      content="Hand-picked, premium teas from around the world."
+    />
+    <meta
+      name="twitter:image"
+      content="https://md-abu-kayser.github.io/TeaHaven-Premium-Tea-Experience/"
+    />
   </head>
+
   <body
     class="font-manrope transition-all duration-300 bg-base-100 overflow-x-hidden"
   >
-    <!-- Preloader for better UX (fades out on load) -->
     <div
       id="preloader"
       class="fixed inset-0 bg-tea-cream z-50 flex items-center justify-center transition-opacity duration-500 opacity-100"
@@ -122,7 +166,7 @@
         class="animate-spinSlow w-16 h-16 border-4 border-tea-gold border-t-transparent rounded-full"
       ></div>
     </div>
-    <!-- Navigation (Responsive with hamburger, smooth scroll) -->
+    <!-- Navigation -->
     <header
       class="sticky top-0 z-50 shadow-md bg-base-100 transition-shadow duration-300"
     >
@@ -347,7 +391,7 @@
       </div>
     </header>
 
-    <!-- Hero Section (Parallax, animations, responsive) -->
+    <!-- Hero Section -->
     <section
       id="home"
       class="hero min-h-screen gradient-bg relative overflow-hidden parallax-bg"
@@ -461,7 +505,6 @@
           </div>
         </div>
       </div>
-      <!-- Floating decorative elements for gorgeous look -->
       <div
         class="absolute top-20 left-10 w-20 h-20 bg-tea-green/30 rounded-full blur-xl animate-pulse-slow floating-card"
       ></div>
@@ -482,7 +525,7 @@
       ></div>
     </section>
 
-    <!-- Stats Section (Expanded with more stats, table-like layout) -->
+    <!-- Stats Section -->
     <section class="py-16 bg-base-200 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 stagger-animation">
         <div class="text-center mb-12">
@@ -610,7 +653,6 @@
           </div>
         </div>
       </div>
-      <!-- Decorative wave for section transition -->
       <svg
         class="absolute bottom-0 left-0 w-full h-20 text-base-100"
         viewBox="0 0 1440 320"
@@ -623,7 +665,7 @@
       </svg>
     </section>
 
-    <!-- Featured Products (Expanded to 12, with filters, modals) -->
+    <!-- Featured Products -->
     <section id="products" class="py-4 bg-base-100 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 stagger-animation">
@@ -640,7 +682,6 @@
             unique story, flavor profile, and health benefits. Filter by type
             for personalized discovery.
           </p>
-          <!-- Filters for better UX -->
           <div class="flex flex-wrap gap-4 justify-center mt-6">
             <button
               class="btn btn-outline btn-sm hover:bg-tea-green"
@@ -875,7 +916,7 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 5 (New) -->
+          <!-- Product Card 5 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="white"
@@ -925,7 +966,7 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 6 (New) -->
+          <!-- Product Card 6 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="green"
@@ -973,7 +1014,7 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 7 (New) -->
+          <!-- Product Card 7 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="black"
@@ -1021,7 +1062,7 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 8 (New) -->
+          <!-- Product Card 8 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="oolong"
@@ -1069,7 +1110,7 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 9 (New) -->
+          <!-- Product Card 9 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="herbal"
@@ -1117,7 +1158,7 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 10 (New) -->
+          <!-- Product Card 10 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="white"
@@ -1165,7 +1206,7 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 11 (New) -->
+          <!-- Product Card 11 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="green"
@@ -1213,7 +1254,7 @@
               </div>
             </div>
           </div>
-          <!-- Product Card 12 (New) -->
+          <!-- Product Card 12 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="black"
@@ -1274,7 +1315,6 @@
           </button>
         </div>
       </div>
-      <!-- Decorative tea leaf pattern -->
       <div
         class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
         style="
@@ -1284,7 +1324,7 @@
       ></div>
     </section>
 
-    <!-- About Section (Expanded with timeline, table) -->
+    <!-- About Section -->
     <section id="about" class="py-20 bg-base-200 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 stagger-animation">
@@ -1315,7 +1355,7 @@
               From cultivation to packaging, our process preserves natural
               flavors and benefits, supporting communities worldwide.
             </p>
-            <!-- Expanded Stats -->
+            <!-- Stats -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               <div class="stats shadow hover-lift">
                 <div class="stat">
@@ -1366,7 +1406,7 @@
                 </div>
               </div>
             </div>
-            <!-- Timeline for journey -->
+            <!-- Timeline -->
             <div class="timeline stagger-animation">
               <div class="timeline-box">
                 <div class="timeline-item">
@@ -1475,7 +1515,7 @@
       </svg>
     </section>
 
-    <!-- Process Section (Expanded with more steps, icons) -->
+    <!-- Process Section -->
     <section class="py-20 bg-base-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 stagger-animation">
@@ -1569,7 +1609,7 @@
             </p>
             <div class="mt-4 text-tea-brown font-bold">Step 4</div>
           </div>
-          <!-- Step 5 (New) -->
+          <!-- Step 5 -->
           <div
             class="text-center hover-lift p-6 rounded-2xl bg-base-200 transition-all duration-300 transform hover:scale-105"
           >
@@ -1593,7 +1633,7 @@
       </div>
     </section>
 
-    <!-- Testimonials (Expanded to 6, with carousel-like grid) -->
+    <!-- Testimonials -->
     <section id="reviews" class="py-20 bg-base-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 stagger-animation">
@@ -1656,7 +1696,7 @@
                 >
               </div>
               <p class="text-base-content/70 mb-6 text-sm">
-                "The Imperial Green Tea is divine! Delicate and refreshing – my
+                "The Imperial Green Tea is divine! Delicate and refreshing - my
                 daily ritual. Quality surpasses other brands."
               </p>
               <div class="flex items-center">
@@ -1790,7 +1830,7 @@
                 >
               </div>
               <p class="text-base-content/70 mb-6 text-sm">
-                "Ordering for two years – always fresh and well-packaged.
+                "Ordering for two years - always fresh and well-packaged.
                 Customer service is exceptional."
               </p>
               <div class="flex items-center">
@@ -1814,7 +1854,7 @@
               </div>
             </div>
           </div>
-          <!-- Testimonial 4 (New) -->
+          <!-- Testimonial 4 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift transform hover:scale-105 transition-all duration-300"
           >
@@ -1852,7 +1892,7 @@
                 >
               </div>
               <p class="text-base-content/70 mb-6 text-sm">
-                "Chamomile Herbal Tea helps me unwind. Natural and soothing –
+                "Chamomile Herbal Tea helps me unwind. Natural and soothing -
                 highly recommend for stress relief."
               </p>
               <div class="flex items-center">
@@ -1876,7 +1916,7 @@
               </div>
             </div>
           </div>
-          <!-- Testimonial 5 (New) -->
+          <!-- Testimonial 5 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift transform hover:scale-105 transition-all duration-300"
           >
@@ -1920,7 +1960,7 @@
               </div>
               <p class="text-base-content/70 mb-6 text-sm">
                 "Royal Black Tea is bold and flavorful. Perfect for my daily
-                brew – consistent quality every time."
+                brew - consistent quality every time."
               </p>
               <div class="flex items-center">
                 <div class="avatar mr-4">
@@ -1943,7 +1983,7 @@
               </div>
             </div>
           </div>
-          <!-- Testimonial 6 (New) -->
+          <!-- Testimonial 6 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift transform hover:scale-105 transition-all duration-300"
           >
@@ -1986,7 +2026,7 @@
                 >
               </div>
               <p class="text-base-content/70 mb-6 text-sm">
-                "Silver Needle White Tea is exquisite. Light and elegant – a
+                "Silver Needle White Tea is exquisite. Light and elegant - a
                 luxury in every sip."
               </p>
               <div class="flex items-center">
@@ -2002,7 +2042,7 @@
                   </div>
                 </div>
                 <div>
-                  <h4 class="font-bold text-tea-dark">Anna Müller</h4>
+                  <h4 class="font-bold text-tea-dark">Anna Muller</h4>
                   <p class="text-sm text-base-content/70">Artist, Germany</p>
                 </div>
               </div>
@@ -2023,14 +2063,14 @@
       </div>
     </section>
 
-    <!-- Events Section (Expanded to 9, with categories, booking modals) -->
+    <!-- Events Section -->
     <section id="events" class="py-20 bg-base-100 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 stagger-animation">
           <h2
             class="text-3xl md:text-5xl font-bold font-playfair mb-4 animate-fadeIn"
           >
-            Tea <span class="text-tea-brown">Events & Workshops</span>
+            Tea <span class="text-tea-brown">Events and Workshops</span>
           </h2>
           <p
             class="text-xl text-base-content/70 max-w-3xl mx-auto animate-fadeIn"
@@ -2178,7 +2218,7 @@
               </div>
             </div>
           </div>
-          <!-- Event 4 (New) -->
+          <!-- Event 4 -->
           <div
             class="card bg-base-100 shadow-xl image-full hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="workshop"
@@ -2212,7 +2252,7 @@
               </div>
             </div>
           </div>
-          <!-- Event 5 (New) -->
+          <!-- Event 5 -->
           <div
             class="card bg-base-100 shadow-xl image-full hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="tasting"
@@ -2246,7 +2286,7 @@
               </div>
             </div>
           </div>
-          <!-- Event 6 (New) -->
+          <!-- Event 6 -->
           <div
             class="card bg-base-100 shadow-xl image-full hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="ceremony"
@@ -2279,7 +2319,7 @@
               </div>
             </div>
           </div>
-          <!-- Event 7 (New) -->
+          <!-- Event 7 -->
           <div
             class="card bg-base-100 shadow-xl image-full hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="pairing"
@@ -2313,7 +2353,7 @@
               </div>
             </div>
           </div>
-          <!-- Event 8 (New) -->
+          <!-- Event 8 -->
           <div
             class="card bg-base-100 shadow-xl image-full hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="workshop"
@@ -2347,7 +2387,7 @@
               </div>
             </div>
           </div>
-          <!-- Event 9 (New) -->
+          <!-- Event 9 -->
           <div
             class="card bg-base-100 shadow-xl image-full hover-lift overflow-hidden group transform hover:scale-105 transition-all duration-500"
             data-type="tasting"
@@ -2395,7 +2435,7 @@
       </div>
     </section>
 
-    <!-- New Blog Section (6 articles, previews) -->
+    <!-- Blog Section -->
     <section id="blog" class="py-20 bg-base-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 stagger-animation">
@@ -2514,7 +2554,7 @@
               </div>
             </div>
           </div>
-          <!-- Blog Post 4 (New) -->
+          <!-- Blog Post 4 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift transform hover:scale-105 transition-all duration-300"
           >
@@ -2528,7 +2568,7 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title text-tea-dark">
-                Sustainable Tea Farming: Our Commitment to the Planet
+                Sustainable Tea Farming:- Our Commitment to the Planet
               </h2>
               <p class="text-base-content/70 text-sm mb-4">
                 How we ensure ethical sourcing and environmental protection in
@@ -2547,7 +2587,7 @@
               </div>
             </div>
           </div>
-          <!-- Blog Post 5 (New) -->
+          <!-- Blog Post 5 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift transform hover:scale-105 transition-all duration-300"
           >
@@ -2578,7 +2618,7 @@
               </div>
             </div>
           </div>
-          <!-- Blog Post 6 (New) -->
+          <!-- Blog Post 6 -->
           <div
             class="card bg-base-100 shadow-xl hover-lift transform hover:scale-105 transition-all duration-300"
           >
@@ -2624,7 +2664,7 @@
       </div>
     </section>
 
-    <!-- New Gallery Section (12 images, lightbox modals) -->
+    <!-- Gallery Section -->
     <section id="gallery" class="py-20 bg-base-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 stagger-animation">
@@ -2887,7 +2927,7 @@
       </div>
     </section>
 
-    <!-- New FAQ Section (10 questions, accordions) -->
+    <!-- FAQ Section -->
     <section id="faq" class="py-20 bg-base-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 stagger-animation">
@@ -2972,7 +3012,7 @@
             </div>
             <div class="collapse-content">
               <p class="text-base-content/70">
-                Book via the event page; spots are limited. Virtual options
+                Book via the event page spots are limited. Virtual options
                 available for select workshops.
               </p>
             </div>
@@ -3042,7 +3082,7 @@
             </div>
             <div class="collapse-content">
               <p class="text-base-content/70">
-                Credit cards, PayPal, Apple Pay, and more – secure and
+                Credit cards, PayPal, Apple Pay, and more - secure and
                 encrypted.
               </p>
             </div>
@@ -3053,62 +3093,53 @@
 
     <!-- Newsletter Section -->
     <section
-      class="relative py-24 bg-gradient-to-br from-[#2c1a12] via-[#3a241a] to-[#120908] text-tea-cream"
+      class="py-20 bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500"
     >
-      <div class="max-w-4xl mx-auto px-6 text-center stagger-animation">
+      <div class="max-w-4xl mx-auto px-6 text-center">
         <!-- Heading -->
-        <h2
-          class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 font-playfair leading-tight animate-fadeIn"
-        >
-          Be Part of Our <span class="text-tea-gold">Tea Community</span>
+        <h2 class="text-4xl md:text-5xl font-playfair font-extrabold mb-4">
+          Join Our
+          <span class="text-[#8B5E34] dark:text-[#D4AF37]">Tea Community</span>
         </h2>
 
         <!-- Subheading -->
         <p
-          class="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90 animate-fadeIn"
-          style="animation-delay: 0.15s"
+          class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto"
         >
-          Sign up to receive
-          <span class="text-tea-gold">exclusive offers</span>, new product
-          launches, expert brewing tips, and invitations to special events.
+          Subscribe to get
+          <span class="font-semibold text-[#8B5E34] dark:text-[#D4AF37]"
+            >exclusive offers</span
+          >, expert brewing tips, and early access to our new tea collections.
         </p>
 
         <!-- Form -->
         <form
-          class="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto bg-white/10 backdrop-blur-md p-4 rounded-2xl shadow-xl"
+          class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto"
           onsubmit="handleSubscribe(event)"
         >
           <input
             type="email"
             placeholder="Enter your email"
             aria-label="Email address"
-            class="w-full px-4 py-3 rounded-xl bg-white/20 placeholder:text-tea-cream/70 text-tea-cream text-base outline-none focus:ring-2 focus:ring-tea-gold transition duration-200 shadow-sm"
+            class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/40 transition duration-200"
             required
           />
           <button
             type="submit"
-            class="sm:ml-2 inline-flex items-center justify-center px-6 py-3 rounded-xl bg-tea-gold text-[#1b0f0b] font-semibold text-base hover:translate-y-[-2px] transform transition-all duration-200 shadow-md focus:outline-none focus:ring-2 focus:ring-tea-gold/40"
+            class="sm:w-auto w-full px-6 py-3 rounded-xl bg-[#8B5E34] hover:bg-[#A17449] dark:bg-[#D4AF37] dark:hover:bg-[#E6C97C] text-white dark:text-gray-900 font-semibold transition-transform duration-200 hover:-translate-y-0.5 shadow-md"
           >
             Subscribe
-            <i class="fas fa-paper-plane ml-2" aria-hidden="true"></i>
+            <i class="fas fa-paper-plane ml-2"></i>
           </button>
         </form>
 
         <!-- Privacy Note -->
-        <p class="mt-6 text-sm opacity-80 max-w-lg mx-auto">
-          We value your privacy. Unsubscribe anytime — no spam, only good tea
-          vibes.
+        <p class="mt-6 text-sm text-gray-500 dark:text-gray-400">
+          We respect your privacy - no spam, only quality tea updates.
         </p>
       </div>
-
-      <!-- Decorative elements -->
-      <div
-        class="absolute top-12 left-24 w-16 h-16 bg-tea-gold/20 rounded-full blur-xl animate-pulse-slow"
-      ></div>
-      <div
-        class="absolute bottom-12 right-24 w-20 h-20 bg-tea-green/30 rounded-full blur-2xl animate-float"
-      ></div>
     </section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-24 bg-base-100 relative">
       <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -3124,7 +3155,7 @@
             style="animation-delay: 0.2s"
           >
             Have questions or feedback? Reach out for support, inquiries, or
-            collaborations — we’d love to hear from you.
+            collaborations we'd love to hear from you.
           </p>
         </div>
 
@@ -3178,7 +3209,7 @@
             </form>
           </div>
 
-          <!-- Contact Details + Map -->
+          <!-- Contact Details -->
           <div>
             <div class="mb-8">
               <h3 class="text-2xl font-bold font-playfair text-tea-brown mb-6">
@@ -3189,19 +3220,19 @@
                   <i
                     class="fas fa-map-marker-alt text-tea-gold mr-3 text-xl"
                   ></i>
-                  <span>123 Tea Lane, Brew City, TC 12345</span>
+                  <span>1212 Dhaka, Bangladesh</span>
                 </li>
                 <li class="flex items-center">
                   <i class="fas fa-phone-alt text-tea-gold mr-3 text-xl"></i>
-                  <span>+1 (123) 456-7890</span>
+                  <span>+880 1604 000 456</span>
                 </li>
                 <li class="flex items-center">
                   <i class="fas fa-envelope text-tea-gold mr-3 text-xl"></i>
-                  <span>support@teahaven.com</span>
+                  <span>abu.kayser.official@gmail.com</span>
                 </li>
                 <li class="flex items-center">
                   <i class="fas fa-clock text-tea-gold mr-3 text-xl"></i>
-                  <span>Mon–Fri: 9AM – 6PM</span>
+                  <span>Mon-Sat: 9AM - 7PM</span>
                 </li>
               </ul>
             </div>
@@ -3312,7 +3343,7 @@
             </li>
             <li>
               <a class="link link-hover hover:text-tea-gold"
-                >Tea Accessories & Gifts</a
+                >Tea Accessories and Gifts</a
               >
             </li>
           </ul>
@@ -3325,7 +3356,7 @@
             <li><a class="link link-hover hover:text-tea-gold">About Us</a></li>
             <li>
               <a class="link link-hover hover:text-tea-gold"
-                >Contact & Support</a
+                >Contact and Support</a
               >
             </li>
             <li><a class="link link-hover hover:text-tea-gold">Careers</a></li>
@@ -3356,7 +3387,7 @@
             </li>
             <li>
               <a class="link link-hover hover:text-tea-gold"
-                >Return & Refund Policy</a
+                >Return and Refund Policy</a
               >
             </li>
             <li>
@@ -3382,7 +3413,7 @@
             </li>
             <li>
               <a class="link link-hover hover:text-tea-gold"
-                >FAQ & Help Center</a
+                >FAQ and Help Center</a
               >
             </li>
             <li>
@@ -3410,7 +3441,7 @@
         <div class="flex flex-wrap gap-6 justify-center">
           <div class="flex items-center">
             <i class="fas fa-credit-card mr-2 text-tea-gold"></i>
-            <span>Secure Payments: Visa, Mastercard, PayPal</span>
+            <span>Secure Payments:- Visa, Mastercard, PayPal</span>
           </div>
           <div class="flex items-center">
             <i class="fas fa-truck mr-2 text-tea-gold"></i>
@@ -3432,7 +3463,7 @@
       </div>
     </footer>
 
-    <!-- Modals (For buttons, expanded content) -->
+    <!-- Modals -->
     <!-- Order Modal -->
     <dialog id="orderModal" class="modal">
       <div class="modal-box">
@@ -3448,7 +3479,7 @@
         </div>
       </div>
     </dialog>
-    <!-- Story Modal (Embed video placeholder) -->
+    <!-- Story Modal -->
     <dialog id="storyModal" class="modal">
       <div class="modal-box w-11/12 max-w-5xl">
         <h3 class="font-bold text-lg">Watch Our Story</h3>
@@ -3508,11 +3539,11 @@
         </div>
       </div>
     </dialog>
-    <!-- Booking Modals (One for each event, expanded) -->
+    <!-- Booking Modals -->
     <dialog id="bookingModal1" class="modal">
       <div class="modal-box">
         <h3 class="font-bold text-lg">Book Art of Tea Tasting</h3>
-        <p class="py-4">Date: November 15, 2025. Spots left: 10. Price: $50.</p>
+        <p class="py-4">Date: November 10, 2025. Spots left: 10. Price: $50.</p>
         <form method="dialog">
           <button class="btn btn-primary">Confirm Booking</button>
           <button class="btn">Cancel</button>
@@ -3522,7 +3553,7 @@
     <dialog id="bookingModal2" class="modal">
       <div class="modal-box">
         <h3 class="font-bold text-lg">Book Japanese Tea Ceremony</h3>
-        <p class="py-4">Date: December 2, 2025. Spots left: 8. Price: $60.</p>
+        <p class="py-4">Date: December 14, 2025. Spots left: 8. Price: $60.</p>
         <form method="dialog">
           <button class="btn btn-primary">Confirm Booking</button>
           <button class="btn">Cancel</button>
@@ -3531,7 +3562,7 @@
     </dialog>
     <dialog id="bookingModal3" class="modal">
       <div class="modal-box">
-        <h3 class="font-bold text-lg">Book Tea & Food Pairing</h3>
+        <h3 class="font-bold text-lg">Book Tea and Food Pairing</h3>
         <p class="py-4">Date: December 18, 2025. Spots left: 12. Price: $45.</p>
         <form method="dialog">
           <button class="btn btn-primary">Confirm Booking</button>
@@ -3571,7 +3602,7 @@
     </dialog>
     <dialog id="bookingModal7" class="modal">
       <div class="modal-box">
-        <h3 class="font-bold text-lg">Book Tea & Chocolate Pairing</h3>
+        <h3 class="font-bold text-lg">Book Tea and Chocolate Pairing</h3>
         <p class="py-4">Date: February 25, 2026. Spots left: 12. Price: $50.</p>
         <form method="dialog">
           <button class="btn btn-primary">Confirm Booking</button>
@@ -3681,7 +3712,7 @@
         </div>
       </div>
     </dialog>
-    <!-- Gallery Modals (Lightbox) -->
+    <!-- Gallery Modals -->
     <dialog id="galleryModal1" class="modal">
       <div class="modal-box w-11/12 max-w-5xl">
         <img
@@ -3712,7 +3743,6 @@
         </div>
       </div>
     </dialog>
-    <!-- ... Repeat for galleryModal3 to galleryModal12 similarly ... -->
     <dialog id="galleryModal3" class="modal">
       <div class="modal-box w-11/12 max-w-5xl">
         <img
@@ -3875,7 +3905,7 @@
       </div>
     </dialog>
 
-    <!-- Scripts (Theme, animations, filters, forms) -->
+    <!-- JavaScript---scripts -->
     <script>
       // Preloader
       window.addEventListener("load", () => {
@@ -3939,24 +3969,24 @@
         });
       }
 
-      // Add to Cart (Demo alert)
+      // Add to Cart
       function addToCart(productName) {
         alert(`Added ${productName} to cart!`);
       }
 
-      // Subscribe Form (Demo)
+      // Subscribe Form--->demo
       function handleSubscribe(event) {
         event.preventDefault();
         alert("Subscribed successfully!");
       }
 
-      // Contact Form (Demo)
+      // Contact Form--->domo
       function handleContactSubmit(event) {
         event.preventDefault();
         alert("Message sent successfully!");
       }
 
-      // Smooth Scroll for Links
+      // Smooth Scroll For Links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
@@ -3966,7 +3996,7 @@
         });
       });
 
-      // Lazy Load Polyfill (if needed)
+      // Lazy Load Polyfill
       if ("loading" in HTMLImageElement.prototype === false) {
         const images = document.querySelectorAll("img.lazyload");
         images.forEach((img) => {

@@ -1,5 +1,5 @@
-/* CSS Start - Custom Vanilla CSS3 with Transforms, Transitions, Animations */
-
+/* CSS3 All Code*/
+/* ---------------------------------------------------------------------- */
 /* Base Styles */
 body {
   scroll-behavior: smooth;
@@ -98,7 +98,7 @@ body {
   transition: text-shadow 0.3s ease;
 }
 
-/* Custom Keyframes (Expanded) */
+/* Custom Keyframes */
 @keyframes float {
   0%,
   100% {
@@ -297,7 +297,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Media Queries (Expanded for all devices) */
+/* Responsive Media Queries */
 @media (max-width: 1024px) {
   .hero-content {
     flex-direction: column;
@@ -359,7 +359,7 @@ body {
   }
 }
 
-/* Accessibility Enhancements */
+/* Accessibility */
 :focus {
   outline: 2px solid #d4af37;
   outline-offset: 2px;
@@ -377,12 +377,12 @@ body {
   border-width: 0;
 }
 
-/* Preloader Styles */
+/* Preloader */
 #preloader {
   transition: opacity 0.5s ease;
 }
 
-/* Modal Enhancements */
+/* Modal */
 .modal-box {
   animation: fadeIn 0.3s ease;
   transform: scale(0.95);
@@ -393,18 +393,18 @@ body {
   transform: scale(1);
 }
 
-/* Custom Hover for Cards */
+/* card hover */
 .card:hover .card-title {
   color: #d4af37;
   transition: color 0.3s ease;
 }
 
-/* Parallax Effect for Sections */
+/* Parallax Effect */
 section.parallax-bg {
   background-attachment: fixed !important;
 }
 
-/* Additional Custom Classes for Expansion */
+/* Additional */
 .glow-on-hover {
   transition: box-shadow 0.3s ease;
 }
@@ -431,4 +431,4 @@ section.parallax-bg {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* End of Expanded CSS */
+/*------------------------------CSS End-------------------------- */
