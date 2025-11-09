@@ -1,0 +1,66 @@
+/* css start */
+.gradient-bg {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.tea-gradient {
+  background: linear-gradient(to right, #8b4513, #d4af37);
+}
+
+.hero-pattern {
+  background-image: radial-gradient(#8b4513 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.floating-card {
+  animation: float 6s ease-in-out infinite;
+}
+
+.stagger-animation > * {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.stagger-animation > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.stagger-animation > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.stagger-animation > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.stagger-animation > *:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.stagger-animation > *:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .hero-pattern {
+    background-size: 15px 15px;
+  }
+}
+/* css end */
